@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a5f, #2c3e50);
+            color: #fff;
+            padding: 0 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+        }
+        .header-inner h1 {
+            font-size: 1.4em;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .header-inner h1 span {
+            color: #5dade2;
+        }
+        .nav {
+            display: flex;
+            gap: 24px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #d5d8dc;
+            font-weight: 500;
+            font-size: 0.95em;
+            padding: 6px 4px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .nav a:hover,
+        .nav a.active {
+            color: #fff;
+            border-bottom-color: #5dade2;
+        }
+        main {
+            flex: 1;
+            max-width: 960px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .content-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 40px;
+        }
+        .content-card h2 {
+            font-size: 1.6em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .content-card p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05em;
+        }
+        .content-card a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .content-card a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #2c3e50;
+            color: #d5d8dc;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+        footer a {
+            color: #5dade2;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <h1>Task <span>Manager</span></h1>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/about" class="active">About</a>
+                <a href="/contact">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-card">
+            <h2>About Us</h2>
+            <p>Welcome to Task Manager — your simple and efficient solution for managing daily tasks and staying organized.</p>
+            <p>Our platform helps you keep track of important tasks, deadlines, and projects in one place. Whether you're working on personal goals or team projects, Task Manager provides the tools you need to stay productive.</p>
+            <p>If you have any questions or feedback, feel free to reach out through our <a href="/contact">Contact Us</a> page.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <a href="/">Task Manager</a>. All rights reserved. | <a href="/contact">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
